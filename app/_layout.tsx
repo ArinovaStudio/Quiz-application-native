@@ -17,13 +17,15 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   return (
-      <Stack>
-        <StatusBar style="auto" />
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen
-          name="modal"
-          options={{ presentation: "modal", title: "Modal" }}
-        />
-      </Stack>
+    <Stack>
+      <Stack.Screen
+        name="index"
+        options={{
+          headerShown: false,
+          headerTitle: "OLOBIX",
+          headerTitleAlign: "center",
+        }}
+      />
+    </Stack>
   );
 }
