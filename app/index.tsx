@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Fontisto from "@expo/vector-icons/Fontisto";
 import SplashScreen from "@/components/SplashScreen";
 import NoInternetScreen from "@/components/InternetNotConnected";
+import { StatusBar } from "expo-status-bar";
 
 export default function Index() {
   const [isConnected, setIsConnected]: any = useState(null);
@@ -46,6 +47,7 @@ export default function Index() {
   }, [])
   return (
     <View style={{ flex: 2, paddingTop: "10%", backgroundColor: "white" }}>
+    <StatusBar style="dark" />
       {
       splash ? <SplashScreen/> :
       isConnected ? (

@@ -14,16 +14,12 @@ export const unstable_settings = {
 };
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
     <Stack>
       <Stack.Screen
         name="index"
         options={{
           headerShown: false,
-          headerTitle: "OLOBIX",
-          headerTitleAlign: "center",
         }}
       />
     </Stack>
